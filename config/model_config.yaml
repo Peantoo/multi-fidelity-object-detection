@@ -1,0 +1,20 @@
+model:
+  vae:
+    latent_dim: 128
+  detector:
+    # To be determined
+
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  num_epochs: 100
+
+data:
+  synthetic:
+    low_fidelity_path: "data/synthetic/low_fidelity"
+    medium_fidelity_path: "data/synthetic/medium_fidelity"
+    high_fidelity_path: "data/synthetic/high_fidelity"
+  real_world:
+    kitti_path: "data/real_world/kitti"
+    cityscapes_path: "data/real_world/cityscapes"
+    bdd100k_path: "data/real_world/bdd100k"
